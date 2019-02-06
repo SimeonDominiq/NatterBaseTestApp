@@ -140,13 +140,13 @@ class QuestionData extends Component {
             ) : (
               <div>
                 <div>
-                  <h4>My view of me</h4>
+                  <h3>My view of me</h3>
                 </div>
                 <div>
                   <form onSubmit={this.handleSubmit}>
                     {QuestionComponent}
-                    <div className="form-button">
-                      <input type="submit" value="Submit" />
+                    <div className="form-button text-center">
+                      <input type="submit" value="Submit" className="btn" />
                     </div>
                   </form>
                 </div>

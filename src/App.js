@@ -5,8 +5,8 @@ import "./css/Styles.css";
 class App extends Component {
   render() {
     return (
-      <div>
-        <h2>This is App</h2>
+      <div className="container question-cont">
+        <h1>9 to 5 Test</h1>
         <Link to="/test">Start</Link>
       </div>
     );

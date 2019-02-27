@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import QuestionView from "../pages/Test";
+import QuestionView from "../pages/QuestionView";
 import Loader from "../pages/Loader";
 
-const API_URL = process.env.API_URL,
-  API_ACCESS_TOKEN = process.env.API_ACCESS_TOKEN;
+const API_URL = "http://test.natterbase.com:3002/questions",
+  API_ACCESS_TOKEN =
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMDAwMDAwMDMiLCJpYXQiOjE1MzM2NDQwOTMsImV4cCI6MTU2NTA5MzY5M30.oMv_mQN6mAAmAVrRAozC7Ytk3omAye9P_TQ8Xyg3VOE";
 
 class QuestionData extends Component {
   constructor() {
@@ -31,7 +32,6 @@ class QuestionData extends Component {
         });
       })
       .catch(error => {
-        console.log(error);
         this.setState({
           isLoading: false,
           errorLoading: true
